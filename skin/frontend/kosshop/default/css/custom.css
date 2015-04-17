@@ -1,3 +1,52 @@
-body{
-	background: red;
+/* line 42, sprite/*.png */
+.sprite-sprite {
+  background: url('../images/sprite-s26ae7ff5ec.png') no-repeat;
+}
+
+/* line 42, sprite2x/*.png */
+.sprite2x-sprite {
+  background: url('../images/sprite2x-se6672ed1fa.png') no-repeat;
+}
+
+/* line 1, ../sass/_icons.scss */
+.arrown-left-store {
+  background-image: url('../images/sprite-s7cf276b449.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 17px;
+  width: 12px;
+  vertical-align: middle;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  /* line 1, ../sass/_icons.scss */
+  .arrown-left-store {
+    background-image: url('../images/sprite2x-sdff3a8baf3.png');
+    background-size: 12px 17px;
+    background-position: 0 0;
+    height: 17px;
+    width: 12px;
+  }
+}
+
+/* line 2, ../sass/pages/_homepage.scss */
+body.cms-index-index .main,
+body.cms-index-defaultindex .main {
+  padding-top: 0;
+}
+
+/* line 6, ../sass/pages/_homepage.scss */
+.wrapper {
+  border-top-color: #7f0066;
+}
+
+/* line 10, ../sass/pages/_homepage.scss */
+.cms-index-index #nav #nav-home > a, #nav > li.active > a, .vertnav-top li.current > a {
+  background: #7f0066;
+}
+
+/* line 14, ../sass/pages/_homepage.scss */
+#nav, .vertnav-top {
+  border-bottom-color: #7f0066;
 }

@@ -90,36 +90,6 @@
 
 <div class="footer-container<?php if($footerContainerCss) echo " " . implode(" ", $footerContainerCss); ?>">
 <div class="footer-container2">
-
-	<div class="footer-top-container section-container">
-        <div class="footer-top footer container<?php if($classString['top']) echo " " . $classString['top']; ?>">
-            <div class="grid-full">
-            
-                <div class="section clearer links-wrapper-separators">
-                
-                	<?php //Default Magento footer links (page.xml) ?>
-                    <?php if ($theme->getCfg('magento_blocks/footer_links')): ?>
-                        <div class="item item-left"><?php echo $this->getChildHtml('footer_links'); ?></div>
-                    <?php endif; ?>
-                    
-                    <?php //Custom footer links - override default Magento footer links ?>
-                    <?php if ($tmp = $this->getChildHtml('block_footer_links')): ?>
-                        <div class="item item-left"><?php echo $tmp; ?></div>
-					<?php endif; ?>
-                    
-                    <?php //Secondary custom footer links ?>
-                    <?php if ($tmp = $this->getChildHtml('block_footer_links2')): ?>
-                        <div class="item item-right"><?php echo $tmp; ?></div>
-                    <?php endif; ?>
-                    
-                </div> <!-- end: footer-top section -->
-                
-            </div> <!-- end: grid-full -->
-        </div> <!-- end: footer-top -->
-    </div>
-
-
-
 	<?php //
 		$b = array();
 		$b['primary'] = $theme->getFormattedBlocks($this, 'block_footer_column', $theme->getCfg('footer/links_column_auto_width'));

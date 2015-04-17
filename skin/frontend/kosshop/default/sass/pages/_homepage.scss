@@ -1,0 +1,16 @@
+body.cms-index-index .main, 
+body.cms-index-defaultindex .main {
+	padding-top: 0;
+}
+
+.wrapper {
+	border-top-color: $c-theme-purple;
+}
+
+.cms-index-index #nav #nav-home > a, #nav > li.active > a, .vertnav-top li.current > a {
+	background: $c-theme-purple;
+}
+
+#nav, .vertnav-top {
+	border-bottom-color: $c-theme-purple;
+}
