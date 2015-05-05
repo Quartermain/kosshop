@@ -62,7 +62,7 @@ body.cms-index-defaultindex .main {
 /* line 24, ../sass/pages/_homepage.scss */
 #nav > li:hover > a, .vertnav-top li > a:hover {
   background-color: transparent;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px #ed1c24;
   color: black;
 }
 
@@ -107,4 +107,24 @@ a:hover, .vertnav-side li.current > a {
 .item:hover .sticker {
   width: 50px;
   height: 50px;
+}
+
+/* line 65, ../sass/pages/_homepage.scss */
+.footer span.icon {
+  background-color: black;
+}
+
+/* line 69, ../sass/pages/_homepage.scss */
+.footer-bottom-container {
+  background-color: black;
+}
+
+/* line 73, ../sass/pages/_homepage.scss */
+.nav-container {
+  border-bottom: solid 2px #222222;
+}
+
+/* line 77, ../sass/pages/_homepage.scss */
+#nav > li {
+  margin-bottom: -7px;
 }
