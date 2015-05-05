@@ -1,16 +1,63 @@
-body.cms-index-index .main, 
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+}
+body.cms-index-index .main,
 body.cms-index-defaultindex .main {
 	padding-top: 0;
 }
 
 .wrapper {
-	border-top-color: $c-theme-purple;
+	border-top-color: $c-theme;
 }
 
 .cms-index-index #nav #nav-home > a, #nav > li.active > a, .vertnav-top li.current > a {
-	background: $c-theme-purple;
+	background: $c-transparent;
+	border-bottom: solid 2px $c-theme;
+	color: $c-theme;
 }
 
 #nav, .vertnav-top {
-	border-bottom-color: $c-theme-purple;
+	border: none;
+}
+
+#nav > li:hover > a, .vertnav-top li > a:hover {
+	background-color: $c-transparent;
+	border-bottom: solid 2px $c-theme;
+	color: $c-theme;
+}
+
+#nav > li.parent:hover > a .caret {
+	border-top-color: $c-theme;
+}
+
+.links > li > a:hover {
+	background-color: $c-theme;
+}
+
+a:hover, .vertnav-side li.current > a {
+	color: $c-hover;
+}
+
+.price-box .regular-price .price, .price-box .minimal-price .price {
+	color: $c-theme;
+}
+
+#nav, .vertnav-top li a {
+	background-color: $c-transparent;
+}
+
+.main-font, h1, h2, h3, h4, h5, .section-title, .products-list .product-name, .products-grid .product-name, h3.product-name, .feature .heading, .accordion .heading, #mobnav-trigger, #nav > li > a, #nav.wide ul.level0 > li > a, .vertnav-top li a, .block .block-title, #opc-login h3, .box-account .box-head h2, .order-items h2.table-caption, .order-items h2.sub-title, .order-items .order-comments h2, .product-view .box-reviews dt .heading, .gen-tabs .tabs a, .footer .heading, #subscribe-form label, .caption .heading {
+	font-family: $font-family-base;
+}
+
+.sticker {
+	width: 40px;
+	height: 40px;
+	font-size: $font-size-base;
+}
+
+.item:hover .sticker {
+	width: 50px;
+	height: 50px;
 }

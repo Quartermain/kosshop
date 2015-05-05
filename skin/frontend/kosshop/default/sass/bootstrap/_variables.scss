@@ -12,7 +12,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 // 
 
 $c-white:				#fff;
-$c-black:				#000;
+
 $c-gray:				#9c9c9c;
 $c-gray-light:			#c5c5c5;
 $c-yellow-light:		#ccbea7;
@@ -32,19 +32,19 @@ $c-gray-bold2:			#eaecee;
 $c-gray-bold3:			#bcbdbd;
 
 
-//== Colors
-
+//== Colors theme Trung
+$c-black:				#000;
 $c-purple:				#7f0066;
+$c-red:					#ed1c24;
+$c-graytheme:			#2a2a2a;
+$c-transparent: 		transparent;
 
 
+$c-theme:				$c-black; // Color cho tat ca trong theme dung
+$c-menutop-hover:		lighten($c-theme, 13.5%);
+$c-hover:				lighten($c-theme, 5.5%);; // Color hover text cho tat ca trong theme dung
 
-//== The end Colors
-
-// Theme purple
-// 
-
-$c-theme-purple:		$c-purple;
-
+//The end color theme
 
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -87,7 +87,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "'Roboto Condensed", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       "Roboto", "Times New Roman", Times, serif !default;
 $font-family-opensans:    'Open Sans', sans-serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
