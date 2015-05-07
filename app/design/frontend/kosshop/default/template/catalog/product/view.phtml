@@ -23,7 +23,9 @@
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
 <div class="product-view">
-
+	<div class="shar-icon">
+		<div class="fb-like" data-href="https://www.facebook.com/tamkosshop" data-width="20" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+	</div>
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
 
     	<?php echo $this->getBlockHtml('formkey'); ?>
