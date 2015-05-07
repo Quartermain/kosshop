@@ -137,26 +137,26 @@
 			<remove name="left.newsletter"/> <!-- Moved newsletter to the footer -->
 			<action method="unsetChild"><name>tags_popular</name></action>
 
-			<block type="catalog/product_compare_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
-			<block type="reports/product_compared" name="right.reports.product.compared" template="reports/product_compared.phtml" />
-			<block type="reports/product_viewed" name="left.reports.product.viewed" template="reports/product_viewed.phtml" />
-			<block type="wishlist/customer_sidebar" name="wishlist_sidebar" as="wishlist" template="wishlist/sidebar.phtml"/>
-			<block type="poll/activePoll" name="right.poll">
+			<!-- <block type="catalog/product_compare_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/> -->
+			<!-- <block type="reports/product_compared" name="right.reports.product.compared" template="reports/product_compared.phtml" /> -->
+			<!-- <block type="reports/product_viewed" name="left.reports.product.viewed" template="reports/product_viewed.phtml" /> -->
+			<!-- <block type="wishlist/customer_sidebar" name="wishlist_sidebar" as="wishlist" template="wishlist/sidebar.phtml"/> -->
+			<!-- <block type="poll/activePoll" name="right.poll">
 				<action method="setPollTemplate"><template>poll/active.phtml</template><type>poll</type></action>
 				<action method="setPollTemplate"><template>poll/result.phtml</template><type>results</type></action>
-			</block>
+			</block> -->
 			<block type="tag/popular" name="tags_popular" template="tag/popular.phtml"/>
 			<block type="paypal/logo" name="paypal.partner.right.logo" template="paypal/partner/logo.phtml"/>
 			
 			<!-- Custom static blocks -->
-			<block type="cms/block" name="block_left_top" before="-">
+			<!-- <block type="cms/block" name="block_left_top" before="-">
 				<action method="setBlockId"><block_id>block_left_top</block_id></action>
 			</block>
 			<block type="cms/block" name="block_left_bottom" after="-">
 				<action method="setBlockId"><block_id>block_left_bottom</block_id></action>
-			</block>
+			</block> -->
 			
-			<action ifconfig="ultimo/header/compare" method="unsetChild"><name>catalog.compare.sidebar</name></action>
+			<!-- <action ifconfig="ultimo/header/compare" method="unsetChild"><name>catalog.compare.sidebar</name></action> -->
 			
 		</reference>
 		
@@ -358,9 +358,9 @@
 		</reference>
 		
 		<!-- Insert related products into product view (section "product.info") and remove them from the right column -->
-		<reference name="right">
+		<!-- <reference name="right">
 			<action method="unsetChild"><name>catalog.product.related</name></action>
-		</reference>
+		</reference> -->
 		
 		<reference name="catalog.product.related">
 			<action method="setTemplate"><template helper="ultimo/data/getRelatedProductsTemplate" /></action>

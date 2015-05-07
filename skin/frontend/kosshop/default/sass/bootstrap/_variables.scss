@@ -43,6 +43,7 @@ $c-transparent: 		transparent;
 $c-theme:				$c-black; // Color cho tat ca trong theme dung
 $c-menutop-hover:		lighten($c-theme, 13.5%);
 $c-hover:				lighten($c-theme, 5.5%);; // Color hover text cho tat ca trong theme dung
+$c-tab:					lighten($c-theme, 99%);
 
 //The end color theme
 

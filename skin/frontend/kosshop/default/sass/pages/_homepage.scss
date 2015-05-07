@@ -8,13 +8,13 @@ body.cms-index-defaultindex .main {
 }
 
 .wrapper {
-	border-top-color: $c-theme;
+	border-top-color: $c-red;
 }
 
 .cms-index-index #nav #nav-home > a, #nav > li.active > a, .vertnav-top li.current > a {
-	background: $c-transparent;
-	border-bottom: solid 2px $c-theme;
-	color: $c-theme;
+	background-color: $c-transparent;
+	border-bottom: solid 2px $c-red;
+	color: $c-red;
 }
 
 #nav, .vertnav-top {
@@ -24,7 +24,16 @@ body.cms-index-defaultindex .main {
 #nav > li:hover > a, .vertnav-top li > a:hover {
 	background-color: $c-transparent;
 	border-bottom: solid 2px $c-red;
-	color: $c-theme;
+	color: $c-red;
+}
+
+#nav > li > a, #mobnav-trigger {
+	font-size: $font-size-base;
+	font-weight: 700;
+}
+
+#nav ul li a:hover {
+	color: $c-red;
 }
 
 #nav > li.parent:hover > a .caret {
@@ -76,4 +85,16 @@ a:hover, .vertnav-side li.current > a {
 
 #nav > li {
   margin-bottom: -7px;
+}
+
+.gen-tabs .tabs a {
+	background-color: $c-tab;
+}
+
+button.button span {
+	text-transform: uppercase;
+}
+button.button:hover span {
+	background-color: $c-theme;
+	text-transform: uppercase;
 }
