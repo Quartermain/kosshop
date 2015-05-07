@@ -939,9 +939,9 @@ class Mage_Core_Model_Store extends Mage_Core_Model_Abstract
      * @param mixed $price
      * @return double
      */
-    public function roundPrice($price)
+    public function roundPrice($price,$roundTo=3)
     {
-        return round($price, 2);
+        return round($price, $roundTo);
     }
 
     /**
