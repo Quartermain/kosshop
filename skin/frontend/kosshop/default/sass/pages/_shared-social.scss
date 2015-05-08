@@ -23,27 +23,27 @@
         cursor: pointer;
     }
     .custom_facebook {
-        width: 20px;
+        width: 9px;
         @include use-sprite('fb');
         &:hover {
             @include use-sprite('fb-hv');
-            width: 20px;
+            width: 9px;
         }
         span {
             background: none !important;
-            width: 20px;
+            width: 9px;
         }
     }
     .custom_twitter {
-        width: 20px;
+        width: 25px;
         @include use-sprite('twitter');
         &:hover {
             @include use-sprite('twitter-hv');
-            width: 20px;
+            width: 25px;
         }
         span {
             background: none !important;
-            width: 20px;
+            width: 25px;
         }
     }
     .custom_pinterest {
