@@ -204,6 +204,9 @@
 				<action method="setBlockId"><block_id>block_header_top_right2</block_id></action>
 			</block>
 			
+			<!-- Share this -->
+			<block type="core/template" name="sharethis" template="sharethis/head.phtml"/>
+			
 			<!-- Compare block -->
 			<block type="catalog/product_compare_sidebar" name="compare.mini" as="compareMini" template="catalog/product/compare/mini.phtml"/>
 			
@@ -356,6 +359,7 @@
 		<reference name="root">
 			<action method="setTemplate"><template>page/1column.phtml</template></action>
 		</reference>
+
 		
 		<!-- Insert related products into product view (section "product.info") and remove them from the right column -->
 		<!-- <reference name="right">
@@ -376,6 +380,7 @@
 		
 			<!-- Change review summary template: removed links to review page. IMPORTANT: new template file. -->
 			<action method="addReviewSummaryTemplate"><type>default</type><template>review/helper/summary_nolinks.phtml</template></action>
+			<block type="core/template" name="social-sharing" template="catalog/product/social-sharing.phtml"/>
 			
 			<!-- Uncomment to restore Magento's default image display -->
 			<!--

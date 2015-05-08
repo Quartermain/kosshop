@@ -1,0 +1,35 @@
+
+<?php $_product = $this->getProduct();?>
+<?php $helpImg = $this->helper('infortis/image');?>
+<?php $helpLayout = $this->helper('firstconfig');?>
+<?php $brand = ''?>
+
+<div class="sharing-this-social-sharing">
+    <span st_url="<?php echo $_product->getProductUrl()?>"
+        st_title="<?php echo htmlentities($_product->getName() . ' | ' . $brand)?>"
+        st_image="<?php echo $helpImg->getImg($_product, 368, 485, 'small_image'); ?>"
+        st_summary="<?php echo htmlentities($helpLayout->strShortDescription($_product->getShortDescription()))?>"
+        class='st_facebook_large custom_facebook' displayText='Facebook'></span>
+    <span st_url="<?php echo $_product->getProductUrl()?>"
+          st_title="<?php echo htmlentities($_product->getName() . ' | ' . $brand)?>"
+          st_image="<?php echo $helpImg->getImg($_product, 368, 485, 'small_image'); ?>"
+          st_summary="<?php echo htmlentities($helpLayout->strShortDescription($_product->getShortDescription()))?>"
+          class='st_twitter_large custom_twitter' displayText='Tweet'></span>
+    <span st_url="<?php echo $_product->getProductUrl()?>"
+          st_title="<?php echo htmlentities($_product->getName() . ' | ' . $brand)?>"
+          st_image="<?php echo $helpImg->getImg($_product, 368, 485, 'small_image'); ?>"
+          st_summary="<?php echo htmlentities($helpLayout->strShortDescription($_product->getShortDescription()))?>"
+          class='st_pinterest_large custom_pinterest' displayText='Pinterest'></span>
+    <span st_url="<?php echo $_product->getProductUrl()?>"
+          st_title="<?php echo htmlentities($_product->getName() . ' | ' . $brand)?>"
+          st_image="<?php echo $helpImg->getImg($_product, 368, 485, 'small_image'); ?>"
+          st_summary="<?php echo htmlentities($helpLayout->strShortDescription($_product->getShortDescription()))?>"
+          class='st_tumblr_large custom_tumblr' displayText='Tumblr'></span>
+    <span st_url="<?php echo $_product->getProductUrl()?>"
+          st_title="<?php echo htmlentities($_product->getName() . ' | ' . $brand)?>"
+          st_image="<?php echo $helpImg->getImg($_product, 368, 485, 'small_image'); ?>"
+          st_summary="<?php echo htmlentities($helpLayout->strShortDescription($_product->getShortDescription()))?>"
+          class='st_googleplus_large custom_google' displayText='Google +'></span>
+    <span class="link-share feature feature-icon-hover"  title="Email to a Friend"></span>
+    </a>
+</div>

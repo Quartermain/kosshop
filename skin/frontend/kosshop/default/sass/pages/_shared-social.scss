@@ -1,0 +1,76 @@
+
+//ADDTHIS
+.sharing-this-social-sharing{
+    @include clearfix;
+    display: block !important;
+    width: 100%;
+    clear: both;
+    padding-top: 25px;
+   &> span {
+        float: left;
+        display: block !important;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    a {
+        float: left;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .custom_facebook {
+        @include use-sprite('fb');
+        &:hover {
+            @include use-sprite('fb-hv');
+        }
+        span {
+            background: none !important;
+        }
+    }
+    .custom_twitter {
+        @include use-sprite('twitter');
+        &:hover {
+            @include use-sprite('twitter-hv');
+        }
+        span {
+            background: none !important;
+        }
+    }
+    .custom_pinterest {
+        @include use-sprite('pinterest');
+        &:hover {
+            @include use-sprite('pinterest-hv');
+        }
+        span {
+            background: none !important;
+        }
+    }
+    .custom_tumblr {
+        @include use-sprite('tumblr');
+        &:hover {
+            @include use-sprite('tumblr-hv');
+        }
+        span {
+            background: none !important;
+        }
+    }
+    .custom_google {
+        @include use-sprite('gplus');
+        &:hover {
+            @include use-sprite('gplus-hv');
+        }
+        span {
+            background: none !important;
+        }
+    }
+    .feature  {
+        @include use-sprite('mail');
+        margin-top: 0;
+        &:hover {
+            @include use-sprite('mail-hv');
+        }
+        span {
+            background: none !important;
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Kosshop_Firstconfig>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Kosshop_Firstconfig>
+    </modules>
+</config>
