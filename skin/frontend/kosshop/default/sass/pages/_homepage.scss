@@ -98,3 +98,11 @@ button.button:hover span {
 	background-color: $c-theme;
 	text-transform: uppercase;
 }
+
+.action-box {
+	.add-to-links {
+		li:nth-child(2) {
+			display: none;
+		}
+	}
+}
