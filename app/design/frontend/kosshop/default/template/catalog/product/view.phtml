@@ -22,10 +22,10 @@
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="sharing-social">
+	<?php echo $this->getChild('social-sharing')->setProduct($_product)->toHtml(); ?>
+</div>
 <div class="product-view">
-	<div class="sharing-this-social-sharing">
-		<?php echo $this->getChild('social-sharing')->setProduct($_product)->toHtml(); ?>
-	</div>
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
 
     	<?php echo $this->getBlockHtml('formkey'); ?>
